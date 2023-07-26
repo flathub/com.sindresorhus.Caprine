@@ -39,6 +39,7 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.58.0" date="2023-07-26"/>
     <release version="2.57.4" date="2023-05-06">
       <description>
         <p>What's Changed</p>
