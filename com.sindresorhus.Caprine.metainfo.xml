@@ -39,8 +39,14 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="2.60.3" date="2024-12-05">
-      <description></description>
+    <release version="2.60.3" date="2024-12-22">
+      <description>
+        <p>What's Fixed</p>
+        <ul>
+          <li>Fix conversation controls and search function</li>
+          <li>Update preferences selector (may still cause some issues in certain cases)</li>
+        </ul>
+      </description>
     </release>
     <release version="2.60.1" date="2024-04-10">
       <description>
