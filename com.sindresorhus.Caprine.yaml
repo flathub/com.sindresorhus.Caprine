@@ -7,7 +7,7 @@ base: org.electronjs.Electron2.BaseApp
 base-version: '25.08'
 
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node18
+  - org.freedesktop.Sdk.Extension.node20
 
 separate-locales: false
 command: caprine
