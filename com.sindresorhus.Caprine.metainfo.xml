@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2021 Dušan Simić -->
+<!-- Copyright 2024-2026 Michael Quevillon -->
+<!-- Copyright 2021-2024 Dušan Simić -->
 <component type="desktop">
   <id>com.sindresorhus.Caprine</id>
   <provides>
@@ -39,7 +40,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="2.61.0" date="2025-01-03">
+    <release version="2.61.0" date="2026-01-03">
       <description>
         <p>What's Fixed</p>
         <ul>
