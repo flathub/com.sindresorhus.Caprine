@@ -59,8 +59,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/sindresorhus/caprine
-        tag: v2.60.3
-        commit: 2ba637137839e41081ab3fe63b1a1ca609a35ac4
+        tag: v2.61.0
+        commit: c3cbcf94e0c2f964fc9a709a8192625e57ce5206
         dest: main
         x-checker-data:
           type: git
