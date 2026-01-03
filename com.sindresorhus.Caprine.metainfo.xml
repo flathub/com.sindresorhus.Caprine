@@ -39,6 +39,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.61.0" date="2025-01-0333
+      <description>
+        <p>What's Fixed</p>
+        <ul>
+          <li>Disable hidden preferences functions</li>
+          <li>New icon with updated 2025 color scheme</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.60.3" date="2024-12-22">
       <description>
         <p>What's Fixed</p>
