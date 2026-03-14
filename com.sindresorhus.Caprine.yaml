@@ -1,20 +1,21 @@
 app-id: com.sindresorhus.Caprine
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '25.08'
 
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node18
+  - org.freedesktop.Sdk.Extension.node22
 
 separate-locales: false
 command: caprine
 finish-args:
-  # Xorg access for graphics
+  # Wayland with X11 fallback
+  - --socket=wayland
+  - --socket=fallback-x11
   - --share=ipc
-  - --socket=x11
   # Required to provide Call functionality
   - --socket=pulseaudio
   - --device=all
@@ -31,18 +32,18 @@ finish-args:
 
 # Enable node extension by adding it to path
 build-options:
-  append-path: /usr/lib/sdk/node18/bin
+  append-path: /usr/lib/sdk/node22/bin
 
 modules:
   # Build and install caprine
   - name: caprine
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node18/bin
+      append-path: /usr/lib/sdk/node22/bin
       env:
         XDG_CACHE_HOME: /run/build/caprine/flatpak-node/cache
         npm_config_cache: /run/build/caprine/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node18
+        npm_config_nodedir: /usr/lib/sdk/node22
         npm_config_offline: 'true'
     build-commands:
       - npm install --offline
@@ -72,7 +73,7 @@ modules:
           - set -o errexit
           - TMPDIR="${XDG_RUNTIME_DIR}/app/${FLATPAK_ID}"
           - export TMPDIR
-          - exec zypak-wrapper.sh /app/main/caprine "$@"
+          - exec zypak-wrapper.sh /app/main/caprine --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto "$@"
       - type: file
         path: com.sindresorhus.Caprine.desktop
       - type: file
