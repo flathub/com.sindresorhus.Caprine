@@ -12,7 +12,9 @@
   <summary>Elegant Facebook Messenger desktop app</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
-  <url type="homepage">https://sindresorhus.com/caprine</url>
+  <url type="homepage">https://github.com/sindresorhus/caprine</url>
+  <url type="contribute">https://github.com/sindresorhus/caprine?tab=contributing-ov-file</url>
+  <url type="vcs-browser">https://github.com/sindresorhus/caprine</url>
   <icon type="remote" height="256" width="256">https://raw.githubusercontent.com/sindresorhus/caprine/master/build/icon.png</icon>
   <description>
     <p>Caprine is an unofficial and privacy-focused Facebook Messenger app with many useful features.</p>
